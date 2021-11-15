@@ -9,35 +9,44 @@ body {
     justify-content: center;
     align-items: center;
     display: flex;
+    flex-direction: column;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-image: linear-gradient(-50deg, orange, pink); 
+
+}
+
+#title-text {
+    transition-duration: 0.2s;
     color: white;
     font-size: 90px;
     font-family: Arial, Helvetica, sans-serif;
     user-select: none;
     font-weight: bolder;
-    transition-duration: 0.2s;
-
+    display: flex;
+    flex-direction: row;
+    color: white;
 }
 
-@media screen and (max-width:650px){
-    #title {
+@media screen and (max-width:700px){
+    #title-text {
         font-size: 60px;
     }
 }
 
 #wave {
+    animation-fill-mode: forwards;
     cursor: grab;
     margin-left: 10px;
     transition-duration: 0.2s;
     animation: scale 1.5s ease;
+    /* line-height: 0px; */
 }
 
 @keyframes scale { /*scale with a delay*/
     0% {font-size: 0px;}
     70% {font-size: 0px;}
-    100% {font-size: auto;}
+    100% {font-size: inherit;}
 }
 
 #wave:hover {
@@ -49,5 +58,5 @@ body {
     transform: scale(0.9) rotateZ(-8deg);
     -ms-transform: scale(0.9) rotateZ(-8deg);
 }
-/* End Welcome Text */
 
+/* End Welcome Text */
