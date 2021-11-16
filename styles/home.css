@@ -17,6 +17,7 @@ body {
 }
 
 #title-text {
+    height: 90%;
     transition-duration: 0.2s;
     color: white;
     font-size: 90px;
@@ -59,4 +60,11 @@ body {
     -ms-transform: scale(0.9) rotateZ(-8deg);
 }
 
+/* #title-links {
+    position: absolute;
+    transform: translateY(130px);
+} */
+
 /* End Welcome Text */
+
+
