@@ -1,0 +1,14 @@
+#content {
+    margin: 2rem;
+    display: grid;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+video, img, h3 {
+    width: 400px;
+}
+
+h3 {
+    margin: 0px;
+}
