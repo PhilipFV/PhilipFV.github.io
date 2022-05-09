@@ -21,6 +21,12 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#content {
+    font-family: "Arial", "Helvetica", sans-serif;
+    color: white;
+    min-height: 85vh;
+}
+
 #navbar > a {
     min-width: 80px;
     padding-left: 10px;
