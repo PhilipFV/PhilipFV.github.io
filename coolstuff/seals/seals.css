@@ -4,13 +4,16 @@
     display: grid;
     gap: 1.5rem;
     justify-content: center;
+    text-align: center;
 }
 
-video, img, h3 {
-    width: 400px;
+#content video, #content img, #content h3 {
+    width: 22rem;
+    border-radius: 1rem;
 }
 
 h3 {
+    font-size: 1.5rem;
     margin-top: 0px;
     margin-bottom: 0px;
     color: white;

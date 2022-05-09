@@ -4,6 +4,7 @@ body {
 }
 
 #navbar {
+    z-index: 1000;
     background-color: white;
     position: sticky;
     top: 0px;
