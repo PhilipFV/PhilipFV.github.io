@@ -60,6 +60,7 @@ header h3{
 }
 
 #content {
+    overflow: hidden;
     display: grid;
     padding: auto;
     justify-items: center;
@@ -205,6 +206,18 @@ button {
     }
 
     #QuoteContent {
+        transform: scale(85%);
+    }
+}
+
+@media screen and (max-width:600px){
+    #QuoteContent {
         transform: scale(70%);
+    }
+}
+
+@media screen and (max-width:500px){
+    #QuoteContent {
+        transform: scale(60%);
     }
 }
