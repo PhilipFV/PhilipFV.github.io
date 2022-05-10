@@ -39,13 +39,23 @@ function SetupDownload() {
         //         a.click();
         //         a.remove();
         //     });
-    domtoimage.toJpeg(quoteCard, { quality: 0.95 })
-        .then(function (dataUrl) {
-        var link = document.createElement('a');
-        link.download = 'my-image-name.jpeg';
-        link.href = dataUrl;
-        link.click();
-    });
+        // Extremely jank mobile fix
+        // var cloneQuote = quoteCard.cloneNode(true);
+        // cloneQuote.style.width = '500px';
+        // cloneQuote.style.height = '600px';
+        // cloneQuote.style.position = 'absolute';
+        // cloneQuote.style.top = '0px';
+        // cloneQuote.style.zIndex = '-1000';
+        // cloneQuote.style.zIndex = '-1000';
+        // document.body.appendChild(cloneQuote);
+        domtoimage.toJpeg(quoteCard, { quality: 0.95 })
+            .then(function (dataUrl) {
+            var link = document.createElement('a');
+            link.download = 'my-image-name.jpeg';
+            link.href = dataUrl;
+            link.click();
+        });
+        delete(cloneQuote);
     }
 }
 
