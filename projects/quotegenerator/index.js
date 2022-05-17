@@ -35,23 +35,14 @@ function SetupDownload() {
         //     .then(function (blob) {
         //         var a = document.createElement('a');
         //         a.href = URL.createObjectURL(blob);
-        //         a.download = 'github.philipv.tech/quotegenerator';
+        //         a.download = 'github.philipv.tech Random quote generator.jpeg';
         //         a.click();
         //         a.remove();
         //     });
-        // Extremely jank mobile fix
-        // var cloneQuote = quoteCard.cloneNode(true);
-        // cloneQuote.style.width = '500px';
-        // cloneQuote.style.height = '600px';
-        // cloneQuote.style.position = 'absolute';
-        // cloneQuote.style.top = '0px';
-        // cloneQuote.style.zIndex = '-1000';
-        // cloneQuote.style.zIndex = '-1000';
-        // document.body.appendChild(cloneQuote);
         domtoimage.toJpeg(quoteCard, { quality: 0.95 })
             .then(function (dataUrl) {
             var link = document.createElement('a');
-            link.download = 'my-image-name.jpeg';
+            link.download = 'github.philipv.tech Random quote generator';
             link.href = dataUrl;
             link.click();
         });
