@@ -1,0 +1,27 @@
+#content {
+    margin: 1rem;
+    padding: 1rem;
+    display: grid;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+#content video, #content img, #content h3 {
+    width: 22rem;
+    border-radius: 16px;
+    justify-self: center;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: white;
+}
+
+@media screen and (max-width:700px){
+    #content video, #content img, #content h3 {
+        font-size: 2rem;
+        width: 95%;
+        border-radius: 8px;
+    }
+}
